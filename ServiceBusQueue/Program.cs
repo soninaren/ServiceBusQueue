@@ -25,8 +25,6 @@ namespace ServiceBusQueue
 
             QueueClient Client = QueueClient.CreateFromConnectionString(connectionString, "QUEUENANE");
 
-            Client.Send(new BrokeredMessage());
-
             for (int i = 0; i < 5; i++)
             {
                 // Create message, passing a string message for the body.
